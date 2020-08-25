@@ -21,8 +21,10 @@ padding-top: 55px;
 
   body {
     background-image: url("https://images.unsplash.com/photo-1514564079764-600734e1e9b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80");
-    background-repeat: no-repeat;
-    background-size: auto;
+  
+    background-size: 100%;
+    background-attachment: fixed;
+  
     text-align: center;
     width: 100%;
   
