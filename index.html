@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Arvaa kuka!</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+
+    <div class="controls">
+      <label for="spacing">Reuna:</label>
+      <input id="spacing" type="range" name="spacing" min="10" max="100" value="10" data-sizing="px">
+
+      <label for="blur">Tarkennus:</label>
+      <input id="blur" type="range" name="blur" min="0" max="25" value="20" data-sizing="px">
+
+      <label for="base">Reunan väri:</label>
+      <input id="base" type="color" name="base" value="#e600ff">
+    </div>
+
+
+
+
+
+    <script>
+      const inputs = document.querySelectorAll('.controls input');
+
+      function handleUpdate() {
+        const suffix = this.dataset.sizing || '';
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+      }
+
+      inputs.forEach(input => input.addEventListener('change', handleUpdate));
+      inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+    </script>
+    <div>
+
+      <input type="button" class="btn btn-info btn-circle btn-xl " value="Uusi!" onclick=" relocate_home()">
+
+      <script>
+        function relocate_home() {
+          location.href = "file:///C:/Users/amili/Documents/Marin/Aminoma/index.html";
+        } 
+      </script>
+    </div>
+    <br>
+    <script>
+
+      var randomImage = new Array();
+
+      randomImage[0] = "https://images.unsplash.com/photo-1591382386627-349b692688ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80";
+      randomImage[1] = "https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80";
+      randomImage[2] = "https://images.unsplash.com/photo-1560743641-3914f2c45636?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1233&q=80";
+      randomImage[3] = "https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1258&q=80";
+      randomImage[4] = "https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1235&q=80";
+      randomImage[5] = "https://images.unsplash.com/photo-1557246349-386676f12663?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3900&q=80";
+      randomImage[6] = "https://images.unsplash.com/photo-1578362613743-cb09ce05275d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80";
+
+      randomImage[7] = "https://images.unsplash.com/photo-1570944191628-a45cf05dc09d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3888&q=80";
+      randomImage[8] = "https://images.unsplash.com/photo-1504006833117-8886a355efbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80";
+      randomImage[9] = "https://images.unsplash.com/photo-1535979863199-3c77338429a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1430&q=80";
+      randomImage[10] = "https://images.unsplash.com/photo-1591083896596-6b9f15f05a71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1233&q=80";
+      randomImage[11] = "https://images.unsplash.com/photo-1586407596876-b4f9d51a85f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80";
+      randomImage[12] = "https://images.unsplash.com/photo-1526319238109-524eecb9b913?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1420&q=80";
+      randomImage[13] = "https://images.unsplash.com/photo-1563204996-8965f0a4a860?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80";
+
+      randomImage[14] = "https://images.unsplash.com/photo-1460999158988-6f0380f81f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80";
+      randomImage[15] = "https://images.unsplash.com/photo-1590743462894-ba7932315ec4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80";
+      randomImage[16] = "https://images.unsplash.com/photo-1554703325-b7811208ff71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80";
+      randomImage[17] = "https://images.unsplash.com/photo-1544377747-75ce8da6c699?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=914&q=80";
+      randomImage[18] = "https://images.unsplash.com/photo-1539418561314-565804e349c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80";
+      randomImage[19] = "https://images.unsplash.com/photo-1540126034813-121bf29033d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80";
+      randomImage[20] = "https://images.unsplash.com/photo-1518024491641-fc57321f8e98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80";
+
+
+
+
+
+
+
+      function getRandomImage() {
+        var number = Math.floor(Math.random() * randomImage.length);
+        document.write('<img name="changingImage" src="' + randomImage[number] + '" />');
+      }
+      getRandomImage()
+
+    </script><br /><br />
+  </div>
+
+
+</body>
+
+</html>
